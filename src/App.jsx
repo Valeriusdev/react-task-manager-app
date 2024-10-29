@@ -1,11 +1,13 @@
-import './App.css'
+import TaskForm from './components/Tasks/TaskForm'
 import TaskList from './components/Tasks/TaskList'
+import './App.css'
 
 const App = () => {
   return (
     <div>
       <h1> Task Manager </h1>
-      < TaskList />
+      <TaskForm />
+      <TaskList />
     </div>
   )
 }
