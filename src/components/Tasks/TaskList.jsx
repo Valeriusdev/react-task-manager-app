@@ -1,6 +1,6 @@
 import Task from "./Task"
 
-const TaskList = () => {
+const TaskList = ({tasks}) => {
   return (
     <>
         <Task />
