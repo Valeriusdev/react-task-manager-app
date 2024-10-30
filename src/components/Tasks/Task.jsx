@@ -1,6 +1,6 @@
-const Task = () => {
+const Task = ({task}) => {
   return (
-    <>Task</>
+    <h1>{task}</h1>
   )
 }
 
