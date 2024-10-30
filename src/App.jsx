@@ -4,7 +4,7 @@ import TaskList from './components/Tasks/TaskList'
 import './App.css'
 
 const App = () => {
-  const [tasks, setTasks] = useState([])
+  const [tasks, setTasks] = useState(["task one", "task two"])
 
   return (
     <div>
