@@ -1,6 +1,6 @@
 const Task = ({task}) => {
   return (
-    <h1>{task}</h1>
+    <h2>{task}</h2>
   )
 }
 

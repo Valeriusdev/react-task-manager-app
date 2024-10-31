@@ -4,12 +4,16 @@ import TaskList from './components/Tasks/TaskList'
 import './App.css'
 
 const App = () => {
-  const [tasks, setTasks] = useState(["task one", "task two"])
+  const [tasks, setTasks] = useState([])
+
+  const addTaskHandler = (text) => {
+    setTasks([...tasks, text])
+  }
 
   return (
     <div>
       <h1> Task Manager </h1>
-      <TaskForm />
+      <TaskForm addTask={addTaskHandler}/>
       <TaskList tasks={tasks}/>
     </div>
   )
