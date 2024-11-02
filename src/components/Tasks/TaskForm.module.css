@@ -2,20 +2,20 @@
   margin-bottom: 30px;
 }
 
-form {
+.taskFormContainer form {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-input {
+.taskFormContainer input {
   width: 45%;
   height: 30px;
   font-size: 1.3rem;
 }
 
-button {
+.taskFormContainer button {
   margin-left: 20px;
   height: 50px;
   cursor: pointer;
@@ -23,12 +23,12 @@ button {
   font-size: 1.5rem;
 }
 
-button:hover {
+.taskFormContainer button:hover {
   background-color: #39850a;
 }
 
-input,
-button {
+.taskFormContainer input,
+.taskFormContainer button {
   padding: 10px 15px;
   border: none;
   border-radius: 10px;
