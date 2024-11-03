@@ -5,4 +5,7 @@
     margin: 15px 0;
     font-size: 1.5rem;
     border-radius: 5px;
+    border: 2px solid #39850a;
+    color: #142f4a;
+    background-color: #f1f2f0;
 }
