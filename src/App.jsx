@@ -11,7 +11,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="App">
       <h1> Task Manager </h1>
       <TaskForm addTask={addTaskHandler}/>
       <TaskList tasks={tasks}/>
