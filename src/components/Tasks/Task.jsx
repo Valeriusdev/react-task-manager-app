@@ -1,8 +1,8 @@
 import styles from './Task.module.css'
 
-const Task = ({task}) => {
+const Task = ({ task, index, deleteTask }) => {
   return (
-    <div className={styles.task}>
+    <div className={styles.task} onDoubleClick={() => deleteTask(index)}>
       <div className={styles.taskText}>{task}</div>
     </div>
   )

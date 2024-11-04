@@ -10,11 +10,15 @@ const App = () => {
     setTasks([...tasks, text])
   }
 
+  const deleteTaskHandler = (index) => {
+    setTasks(tasks.filter((_, idx) => idx !== index))
+  }  
+
   return (
     <div className="App">
       <h1> Task Manager </h1>
-      <TaskForm addTask={addTaskHandler}/>
-      <TaskList tasks={tasks}/>
+      <TaskForm addTask={addTaskHandler} />
+      <TaskList tasks={tasks} deleteTask={deleteTaskHandler} />
     </div>
   )
 }
