@@ -4,7 +4,7 @@ import { RiTodoFill } from 'react-icons/ri'
 const Task = ({ task, index, deleteTask }) => {
   return (
     <div className={styles.task} onDoubleClick={() => deleteTask(index)}>
-      <RiTodoFill />
+      <RiTodoFill className={styles.todoIcon} />
       <div className={styles.taskText}>{task}</div>
     </div>
   )
