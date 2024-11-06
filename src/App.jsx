@@ -16,8 +16,8 @@ const App = () => {
     setTasks([...tasks, newTask])
   }
 
-  const deleteTaskHandler = (index) => {
-    setTasks(tasks.filter((_, idx) => idx !== index))
+  const deleteTaskHandler = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id))
   }  
 
   return (
