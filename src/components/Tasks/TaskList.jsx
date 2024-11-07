@@ -5,8 +5,8 @@ const TaskList = ({tasks, deleteTask}) => {
   return (
     <div className={styles.taskListContainer}>
       {!tasks.length && <h2>Task List is empty</h2>}
-      {tasks.map((task, index) => (
-        <Task key={index} task={task} index={index} deleteTask={deleteTask} />
+      {tasks.map((task) => (
+        <Task key={task.id} task={task} deleteTask={deleteTask} />
       ))}
     </div>
   )
