@@ -1,11 +1,11 @@
 import styles from './Task.module.css'
 import { RiTodoFill } from 'react-icons/ri'
 
-const Task = ({ task, index, deleteTask }) => {
+const Task = ({ task, deleteTask }) => {
   return (
-    <div className={styles.task} onDoubleClick={() => deleteTask(index)}>
+    <div className={styles.task} onDoubleClick={() => deleteTask(task.id)}>
       <RiTodoFill className={styles.todoIcon} />
-      <div className={styles.taskText}>{task}</div>
+      <div className={styles.taskText}>{task.text}</div>
     </div>
   )
 }
