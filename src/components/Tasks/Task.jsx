@@ -7,8 +7,8 @@ const Task = ({ task, deleteTask }) => {
     <div className={styles.task} onDoubleClick={() => deleteTask(task.id)}>
       <RiTodoFill className={styles.todoIcon} />
       <div className={styles.taskText}>{task.text}</div>
-      <RiDeleteBin2Line />
-      <FaCheck />
+      <RiDeleteBin2Line className={styles.deleteIcon} />
+      <FaCheck className={styles.checkIcon} />
     </div>
   )
 }
