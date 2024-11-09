@@ -4,10 +4,10 @@ import styles from './Task.module.css'
 
 const Task = ({ task, deleteTask }) => {
   return (
-    <div className={styles.task} onDoubleClick={() => deleteTask(task.id)}>
+    <div className={styles.task}>
       <RiTodoFill className={styles.todoIcon} />
       <div className={styles.taskText}>{task.text}</div>
-      <RiDeleteBin2Line className={styles.deleteIcon} />
+      <RiDeleteBin2Line className={styles.deleteIcon} onClick={() => deleteTask(task.id)} />
       <FaCheck className={styles.checkIcon} />
     </div>
   )
