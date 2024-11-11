@@ -20,11 +20,19 @@ const App = () => {
     setTasks(tasks.filter((task) => task.id !== id))
   }  
 
+  const toggleTaskHandler = (id) => {
+    setTasks(tasks.map((task) => {
+      return task.id === id
+        ? {...task, isCompleted: !task.isCompleted}
+        : {...task}
+    }))
+  }  
+
   return (
     <div className="App">
       <h1> Task Manager </h1>
       <TaskForm addTask={addTaskHandler} />
-      <TaskList tasks={tasks} deleteTask={deleteTaskHandler} />
+      <TaskList tasks={tasks} deleteTask={deleteTaskHandler} toggleTask = {toggleTaskHandler} />
     </div>
   )
 }
