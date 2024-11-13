@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import TaskForm from './components/Tasks/TaskForm'
 import TaskList from './components/Tasks/TaskList'
+import TasksActions from './components/Tasks/TasksActions'
 import './App.css'
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
     <div className="App">
       <h1> Task Manager </h1>
       <TaskForm addTask={addTaskHandler} />
+      <TasksActions />
       <TaskList tasks={tasks} deleteTask={deleteTaskHandler} toggleTask = {toggleTaskHandler} />
     </div>
   )
