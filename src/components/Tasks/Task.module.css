@@ -21,6 +21,12 @@
     color: #208f8f;
 }
 
+.completedTask {
+    background-color: unset;
+    border-color: gray;
+    color: gray;
+}
+
 .checkIcon,
 .deleteIcon {
     cursor: pointer;
