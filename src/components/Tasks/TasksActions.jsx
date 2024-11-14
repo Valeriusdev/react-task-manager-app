@@ -1,8 +1,8 @@
 const TasksActions = () => {
   return (
     <>
-        <button></button>
-        <button></button>
+        <button>Reset</button>
+        <button>Delete</button>
     </>
   )
 }
