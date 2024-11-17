@@ -1,8 +1,10 @@
+import Button from "../../UI/Button"
+
 const TasksActions = () => {
   return (
     <>
-        <button>Reset</button>
-        <button>Delete</button>
+        <Button>Reset</Button>
+        <Button>Delete</Button>
     </>
   )
 }
