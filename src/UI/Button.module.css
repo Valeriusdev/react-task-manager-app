@@ -8,3 +8,7 @@
     border: none;
     border-radius: 10px;
 }
+
+.button:hover {
+    background-color: rgb(170, 170, 213);
+}
