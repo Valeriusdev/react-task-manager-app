@@ -4,8 +4,8 @@ import Button from "../../UI/Button"
 const TasksActions = () => {
   return (
     <>
-        <Button><RiRefreshLine /></Button>
-        <Button><RiDeleteBin2Line /></Button>
+        <Button title="Reset Tasks"><RiRefreshLine /></Button>
+        <Button title="Clear Completed Tasks"><RiDeleteBin2Line /></Button>
     </>
   )
 }
