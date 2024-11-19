@@ -27,13 +27,17 @@ const App = () => {
         ? {...task, isCompleted: !task.isCompleted}
         : {...task}
     }))
-  }  
+  }
+  
+  const resetTasksHandler = () => {
+    setTasks([])
+  }
 
   return (
     <div className="App">
       <h1> Task Manager </h1>
       <TaskForm addTask={addTaskHandler} />
-      <TasksActions />
+      <TasksActions resetTasks={resetTasksHandler} />
       <TaskList tasks={tasks} deleteTask={deleteTaskHandler} toggleTask = {toggleTaskHandler} />
     </div>
   )
