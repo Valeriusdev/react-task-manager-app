@@ -15,7 +15,7 @@
     text-align: left;
 }
 
-.todoIcon {
+.taskIcon {
     font-size: 1.8rem;
     margin-right: 10px;
     color: #208f8f;
@@ -25,6 +25,12 @@
     background-color: unset;
     border-color: gray;
     color: gray;
+}
+
+.task.completedTask .taskIcon,
+.task.completedTask .checkIcon,
+.task.completedTask .deleteIcon {
+  color: gray;
 }
 
 .checkIcon,
