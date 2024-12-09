@@ -43,10 +43,12 @@ const App = () => {
     <div className="App">
       <h1> Task Manager </h1>
       <TaskForm addTask={addTaskHandler} />
-      <TasksActions
-        resetTasks={resetTasksHandler}
-        deleteCompletedTasks={deleteCompletedTasksHandler}
-      />
+      {!!tasks.length && (
+        <TasksActions
+          resetTasks={resetTasksHandler}
+          deleteCompletedTasks={deleteCompletedTasksHandler}
+        />
+      )}
       <TaskList
         tasks={tasks}
         deleteTask={deleteTaskHandler}
