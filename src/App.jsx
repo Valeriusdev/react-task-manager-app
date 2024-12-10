@@ -39,6 +39,8 @@ const App = () => {
     setTasks(tasks.filter((task) => !task.isCompleted));
   };
 
+  const completedTasksCount = tasks.filter((task) => task.isCompleted).length
+
   return (
     <div className="App">
       <h1> Task Manager </h1>
