@@ -47,6 +47,7 @@ const App = () => {
       <TaskForm addTask={addTaskHandler} />
       {!!tasks.length && (
         <TasksActions
+          completedTasksExist={!!completedTasksCount}
           resetTasks={resetTasksHandler}
           deleteCompletedTasks={deleteCompletedTasksHandler}
         />
