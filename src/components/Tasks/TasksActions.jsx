@@ -1,5 +1,6 @@
 import { RiRefreshLine, RiDeleteBin2Line } from "react-icons/ri";
 import Button from "../../UI/Button";
+import styles from "./TasksActions.module.css";
 
 const TasksActions = ({
   resetTasks,
@@ -7,7 +8,7 @@ const TasksActions = ({
   completedTasksExist,
 }) => {
   return (
-    <>
+    <div className={styles.tasksActionsContainer}>
       <Button title="Reset Tasks" onClick={resetTasks}>
         <RiRefreshLine />
       </Button>
@@ -18,7 +19,7 @@ const TasksActions = ({
       >
         <RiDeleteBin2Line />
       </Button>
-    </>
+    </div>
   );
 };
 
