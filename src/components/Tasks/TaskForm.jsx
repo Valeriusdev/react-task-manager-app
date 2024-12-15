@@ -17,7 +17,7 @@ const TaskForm = ({ addTask }) => {
             value={text}
             onChange={(e) => setText(e.target.value)} 
           />
-          <button type="submit"> Submit </button>
+          <Button type="submit" title="Submit"> Submit </Button>
       </form>
     </div>
   )
