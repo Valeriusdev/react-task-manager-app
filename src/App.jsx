@@ -39,7 +39,7 @@ const App = () => {
     setTasks(tasks.filter((task) => !task.isCompleted));
   };
 
-  const completedTasksCount = tasks.filter((task) => task.isCompleted).length
+  const completedTasksCount = tasks.filter((task) => task.isCompleted).length;
 
   return (
     <div className="App">
@@ -57,6 +57,9 @@ const App = () => {
         deleteTask={deleteTaskHandler}
         toggleTask={toggleTaskHandler}
       />
+      {completedTasksCount > 0 && (
+        <h2>{`You have completed ${completedTasksCount} tasks`}</h2>
+      )}
     </div>
   );
 };
